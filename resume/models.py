@@ -10,7 +10,7 @@ class Resume(models.Model):
     Address=models.CharField(max_length=30)
     Phone =models.CharField(max_length=11)
     Email=models.CharField(max_length=30)
-    Linkedin=models.CharField(max_length=30)
+    Linkedin=models.CharField(max_length=40)
     Languages=models.CharField(max_length=30)
 
 class Post(models.Model):
