@@ -92,7 +92,7 @@ DATABASES = {
         'USER': 'sai',
         'PASSWORD': 'saikumar',
         'HOST': '127.0.0.1',
-        'PORT': '',
+        'PORT': '8000',
     }
 }
 db_from_env = dj_database_url.config(conn_max_age=500)
