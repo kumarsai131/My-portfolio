@@ -87,12 +87,12 @@ EMAIL_PORT= 587
 import dj_database_url
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'saikumar',
-        'USER': 'sai',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER': 'postgres',
         'PASSWORD': 'saikumar',
-        'HOST': '127.0.0.1',
-        'PORT': '8000',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 db_from_env = dj_database_url.config(conn_max_age=500)
