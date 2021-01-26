@@ -1,0 +1,57 @@
+{% extends 'resume/base_2.html' %}
+
+{% block content %}
+
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> saikumar  </span>
+                    <span class="date"><i class="fa fa-calendar"></i>  {{post.date}}  </span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">{{post.title}}</h1>
+                <p style="text-align:center; border:1px  black">
+                <img src="{{post.image.url}}" class="img-fluid" alt="Blog image" text-align: center; width=1100 height=455/>
+                 </p>
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p style="font-size:20px"; >
+                        {{post.content}}
+                    </p>
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}

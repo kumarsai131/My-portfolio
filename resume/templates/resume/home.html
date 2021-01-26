@@ -1,0 +1,20 @@
+{% extends 'resume/base.html' %}
+
+{% block content %}
+{% load static %}
+<section class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1">
+    <div class="color-block d-none d-lg-block"></div>
+    <div class="row home-details-container align-items-center">
+        <div class="col-lg-4 bg position-fixed d-none d-lg-block"><img style='height: 50%; width: 50%; object-fit: contain' img src="{% static 'css/sai.jpg' %}" > </div>
+        <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
+            <div>
+                <img style='height: 100%; width: 100%; object-fit: contain' img src="{% static 'css/sai.jpg' %}" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture"/>
+                <h6 class="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">Hi there !</h6>
+                <h1 class="text-uppercase poppins-font"><span>I'm</span> Sai Kumar</h1>
+                <p class="open-sans-font">I'm a MCA final year student , I am passionate about coding and web development.</p>
+                <a href="about" class="btn btn-about">more about me</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
