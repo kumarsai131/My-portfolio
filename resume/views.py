@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.conf import settings 
 from .models import Resume,Post,Portfolio
 from django.views.generic import ListView
 from django.core.mail import send_mail

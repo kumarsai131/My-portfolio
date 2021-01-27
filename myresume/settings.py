@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '^y77@csc9=txqqo=ty7wh7jkg)7hsk8y+dyr&6lj=w78$+qycj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -76,6 +76,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'myresume.wsgi.application'
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST= 'smtp.gmail.com'
 EMAIL_HOST_USER= 'swawnsai@gmail.com'
 EMAIL_HOST_PASSWORD= 'saikumar'
