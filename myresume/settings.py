@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'myresume.wsgi.application'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST= 'smtp.gmail.com'
 EMAIL_HOST_USER= 'swawnsai@gmail.com'
-EMAIL_HOST_PASSWORD= 'saikumar'
+EMAIL_HOST_PASSWORD= 'uaqhoztypzqxgnsu'
 EMAIL_USE_TLS= True
 EMAIL_PORT= 587
 # Database
